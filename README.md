@@ -1,5 +1,5 @@
 # microservices-spring-boot
-Forex Service (FS) is the Service Provider. It provides currency exchange values for various currency. Here is the sample request call for this service : http://localhost:8000/currency-exchange/from/EUR/to/INR
+Forex Service (FS) is the Service Provider (spring-boot-microservice-forex-service). It provides currency exchange values for various currency. Here is the sample request call for this service : http://localhost:8000/currency-exchange/from/EUR/to/INR
 
 Currency Conversion Service (CCS) can convert a bucket of currencies into another currency. It uses the Forex Service to get current currency exchange values. CCS is the Service Consumer. Here is the same request for this service : 
 http://localhost:8100/currency-converter/from/EUR/to/INR/quantity/10000
