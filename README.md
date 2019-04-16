@@ -6,7 +6,7 @@ http://localhost:8100/currency-converter/from/EUR/to/INR/quantity/10000
 
 Based on the load, we can have multiple instances of the Currency Conversion Service and the Forex Service running. 
 
-We will use Ribbon for Load Balancing and Eureka Naming server for registering all microservices. The Eureka service is accessible at http://localhost:8761/ 
+We will use Ribbon for Load Balancing and Eureka Naming server (spring-boot-microservice-eureka-naming-server) for registering all microservices. The Eureka service is accessible at http://localhost:8761/ 
 
 All instances of the components (CCS and FS) register with the Eureka Naming Server. When FS needs to call the CCS, it will ask Eureka Naming Server for the active instances. We will use Ribbon to do Client Side Load Balancing between the different instances of FS.
 
